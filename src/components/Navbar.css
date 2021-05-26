@@ -1,0 +1,11 @@
+.tab li:hover{
+  background-color: #74bedb;
+}
+.tab{
+  font-family: 'SpaceMono', monospace;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}

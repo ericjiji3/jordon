@@ -1,0 +1,41 @@
+.albumCovers{
+  width: 400px;
+  height: 225px;
+}
+
+.playLeft{
+  position: absolute;
+  top: 67%;
+  right: 50px;
+  font-size: 4rem;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.playRight{
+  position: absolute;
+  top: 67%;
+  left: 370px;
+  font-size: 4rem;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.album1{
+  width: 30vw;
+  height: 32vh;
+  padding-right: 2vw;
+}
+
+.album2{
+  width: 30vw;
+  height: 32vh;
+  padding-left: 2vw;
+}
+
+.albums{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}

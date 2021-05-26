@@ -1,0 +1,59 @@
+.slides{
+  position: relative;
+  height: 75vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic1{
+  width: 25vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+.pic2{
+  width: 25vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+.pic3{
+  width: 28vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+.pic4{
+  width: 28vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+.rightArrow{
+  position: absolute;
+  top: 47%;
+  right: 5vw;
+  font-size: 2rem;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.leftArrow{
+  position: absolute;
+  top: 47%;
+  left: 5vw;
+  font-size: 2rem;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slideInactive{
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active{
+  position: relative;
+  opacity: 1;
+  transition-duration: 1s;
+}

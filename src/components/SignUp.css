@@ -1,0 +1,12 @@
+.emailHead{
+  font-family: 'SpaceMono', monospace;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #1F1F1F;
+  opacity: 1;
+}
+
+.labels{
+  font-family: 'SpaceMonoReg', monospace;
+  font-size: 1em;
+}

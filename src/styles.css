@@ -1,0 +1,14 @@
+.logIn{
+  text-align: center;
+}
+.header{
+  background-clip: content-box;
+}
+body{
+  /* background-color: rgb(230, 242, 255); */
+  background: #FEFEFE 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.afterHeader{
+  height: 700px;
+}
