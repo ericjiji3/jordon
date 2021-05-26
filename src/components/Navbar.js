@@ -9,6 +9,13 @@ class Navbar extends React.Component{
   state = {
     modalOpen: false
   }
+  handleModalOpen = () => {
+    this.setState((prevState) => {
+      return{
+        modalOpen: !prevState.modalOpen
+      }
+    })
+  }
 
   render(){
     return(
@@ -36,7 +43,7 @@ class Navbar extends React.Component{
                 </li>
                 <li className = "tab py-4">
                   <Link to = {NavbarData[4].path} className = {NavbarData[4].cName} style = {{textDecoration: "none"}}>
-                    <span>{NavbarData[4].title}</span>
+                    <a onClick = {this.handleModalOpen}>{NavbarData[4].title}</a>
                   </Link>
                 </li>
                 <li className = "tab py-4">
@@ -51,6 +58,7 @@ class Navbar extends React.Component{
                 </li>
           </ul>
           <SocialBar/>
+          <SignUp modalOpen = {this.state.modalOpen} handleModalOpen = {this.handleModalOpen}/>
         </nav>
   );
 }
