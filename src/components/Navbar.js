@@ -9,9 +9,7 @@ class Navbar extends React.Component{
   state = {
     modalOpen: false
   }
-  handleModalOpen = () => {
-    this.setState
-  }
+
   render(){
     return(
       <nav className = "tab" style = {{height: "500px"}}>
