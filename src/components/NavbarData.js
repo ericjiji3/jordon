@@ -4,7 +4,7 @@ import React from "react";
 export const NavbarData = [
   {
     title: "HOME",
-    path: "/jordon",
+    path: "/",
     cName: "home mask",
     isEmail: false
   },
