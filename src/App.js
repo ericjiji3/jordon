@@ -9,6 +9,7 @@ import Email from './pages/Email';
 import Projects from './pages/Projects';
 import Shop from './pages/Shop';
 import Videos from './pages/Videos';
+import Stages from './pages/Stages';
 
 function App() {
   return (
@@ -19,16 +20,17 @@ function App() {
         </div>
       </div>
       <div className = "afterHeader row">
-        <Router>
-            <Switch>
-              <Route path = '/projects' component = {Projects}/>
-              <Route path = '/videos' component = {Videos}/>
-              <Route path = '/shop' component = {Shop}/>
-              <Route path = '/email' component = {Email}/>
-              <Route path = '/about' component = {About}/>
-              <Route path = '/' exact component = {Home}/>
-            </Switch>
-        </Router>
+      <Router>
+          <Switch>
+            <Route path = '/projects' component = {Projects}/>
+            <Route path = '/videos' component = {Videos}/>
+            <Route path = '/shop' component = {Shop}/>
+            <Route path = '/email' component = {Email}/>
+            <Route path = '/about' component = {About}/>
+            <Route path = '/stages' component = {Stages}/>
+            <Route path = '/' exact component = {Home}/>
+          </Switch>
+      </Router>
       </div>
     </div>
   );

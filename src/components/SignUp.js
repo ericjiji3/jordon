@@ -30,7 +30,7 @@ class SignUp extends Component{
 
   render(){
     return(
-        <form onSubmit = {this.handleSubmit}>
+        <form className = "my-4" onSubmit = {this.handleSubmit}>
           <h4 className = "emailHead text-center my-3">SIGNUP FOR NOTIFICATIONS</h4>
           <div className = "row px-3">
             <label className = "labels col-md-6">

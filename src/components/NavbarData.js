@@ -28,13 +28,12 @@ export const NavbarData = [
   },
   {
     title: "REACH",
-    path: "/",
     cName: "Email",
     isEmail: true
   },
   {
     title: "STAGES",
-    path: "/email",
+    path: "/stages",
     cName: "Email",
     isEmail: false
   },

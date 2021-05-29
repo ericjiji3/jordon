@@ -71,7 +71,7 @@ class Navbar extends React.Component{
                   top: '25vh',
                   left: '30vw',
                   right: '30vw',
-                  bottom: '40vh',
+                  bottom: '33vh',
                   border: '1px solid black',
                   background: '#fff',
                   overflow: 'auto',
