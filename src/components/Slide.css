@@ -32,7 +32,6 @@
   top: 47%;
   right: 5vw;
   font-size: 2rem;
-  z-index: 10;
   cursor: pointer;
   user-select: none;
 }
@@ -42,7 +41,6 @@
   top: 47%;
   left: 5vw;
   font-size: 2rem;
-  z-index: 10;
   cursor: pointer;
   user-select: none;
 }

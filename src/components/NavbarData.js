@@ -28,7 +28,7 @@ export const NavbarData = [
   },
   {
     title: "REACH",
-    path: "/email",
+    path: "/",
     cName: "Email",
     isEmail: true
   },
