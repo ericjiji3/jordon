@@ -1,11 +1,103 @@
 .tab li:hover{
   background-color: #74bedb;
+  font-family: 'SpaceMono';
 }
 .tab{
-  font-family: 'SpaceMono', monospace;
+  font-family: 'SpaceMonoReg', monospace;
   font-size: 1em;
   text-align: center;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+}
+.albumPic{
+  width: 100%;
+  height: 100%;
+
+}
+.emailPop{
+  position: absolute;
+  top: 25vh;
+  left: 35vw;
+  right: 35vw;
+  bottom: 40vh;
+  border: 1px solid black;
+  background: #fff;
+  overflow: auto;
+  WebkitOverflowScrolling: touch;
+  borderRadius: 4px;
+  outline: none;
+}
+.emailOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backgroundColor: rgba(255, 255, 255, 0.75);
+}
+.albumPop{
+  position: absolute;
+  top: 25vh;
+  left: 38vw;
+  right: 38vw;
+  bottom: 30vh;
+  border: 1px solid red;
+  background: #fff;
+  overflow: auto;
+  WebkitOverflowScrolling: touch;
+  borderRadius: 4px;
+  outline: none;
+}
+.albumOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backgroundColor: rgba(255, 255, 255, 0.75);
+}
+@media(max-width: 770px){
+  .emailPop{
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    right: 10vw;
+    bottom: 40vh;
+    border: 1px solid black;
+    background: #fff;
+    overflow: auto;
+    WebkitOverflowScrolling: touch;
+    borderRadius: 4px;
+    outline: none;
+  }
+  .emailOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backgroundColor: rgba(255, 255, 255, 0.75);
+  }
+  .albumPop{
+    position: absolute;
+    top: 25vh;
+    left: 35vw;
+    right: 35vw;
+    bottom: 40vh;
+    border: 1px solid black;
+    background: #fff;
+    overflow: auto;
+    WebkitOverflowScrolling: touch;
+    borderRadius: 4px;
+    outline: none;
+  }
+  .albumOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backgroundColor: rgba(255, 255, 255, 0.75);
+  }
 }

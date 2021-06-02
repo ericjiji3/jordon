@@ -25,6 +25,7 @@ class SignUp extends Component{
 
   handleSubmit(event){
     alert('First name: ' + this.state.fName + '\n' + 'Last name: ' + this.state.lName + '\n' + 'E-mail: ' + this.state.eMail + '\n' + 'Phone number: ' + this.state.number)
+
     event.preventDefault()
   }
 

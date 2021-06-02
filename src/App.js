@@ -22,10 +22,8 @@ function App() {
       <div className = "afterHeader row">
       <Router>
           <Switch>
-            <Route path = '/projects' component = {Projects}/>
             <Route path = '/videos' component = {Videos}/>
             <Route path = '/shop' component = {Shop}/>
-            <Route path = '/email' component = {Email}/>
             <Route path = '/about' component = {About}/>
             <Route path = '/stages' component = {Stages}/>
             <Route path = '/' exact component = {Home}/>

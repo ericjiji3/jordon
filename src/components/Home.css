@@ -2,3 +2,12 @@
   margin-left: 5vw;
   margin-right: 5vw;
 }
+.pic{
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 3vh;
+  cursor: pointer;
+}

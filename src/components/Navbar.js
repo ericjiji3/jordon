@@ -11,7 +11,8 @@ class Navbar extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isOpen2: false
     };
   }
 
@@ -26,7 +27,7 @@ class Navbar extends React.Component{
                 </li>
                 <li className = "tab py-4">
                   <Link to = {NavbarData[1].path} className = {NavbarData[1].cName} style = {{textDecoration: "none"}}>
-                    <span>{NavbarData[1].title}</span>
+                    <a onClick = {() => this.setState({isOpen2: !this.state.isOpen2})}>{NavbarData[1].title}</a>
                   </Link>
                 </li>
                 <li className = "tab py-4">
@@ -56,33 +57,11 @@ class Navbar extends React.Component{
                 </li>
           </ul>
           <SocialBar/>
-          <Modal isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})} style={
-              {
-                overlay:{
-                  position: 'fixed',
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  backgroundColor: 'rgba(255, 255, 255, 0.75)'
-                },
-                content:{
-                  position: 'absolute',
-                  top: '25vh',
-                  left: '30vw',
-                  right: '30vw',
-                  bottom: '33vh',
-                  border: '1px solid black',
-                  background: '#fff',
-                  overflow: 'auto',
-                  WebkitOverflowScrolling: 'touch',
-                  borderRadius: '4px',
-                  outline: 'none'
-
-                }
-              }
-            }>
+          <Modal className = "emailPop" overlayClassName = "emailOverlay" isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})}>
             <SignUp/>
+          </Modal>
+          <Modal className = "albumPop" overlayClassName = "albumOverlay" isOpen = {this.state.isOpen2} onRequestClose = {() => this.setState({isOpen2: !this.state.isOpen2})}>
+            <a href = "https://www.youtube.com/"><img src = "https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" className = "albumPic"></img></a>
           </Modal>
       </nav>
   );

@@ -10,7 +10,6 @@ export const NavbarData = [
   },
   {
     title: "SOUNDS",
-    path: "/projects",
     cName: "Projects",
     isEmail: false
   },
