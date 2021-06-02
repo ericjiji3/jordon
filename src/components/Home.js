@@ -27,7 +27,7 @@ class Home extends React.Component{
         </div>
         <a onClick = {() => this.setState({isOpen: !this.state.isOpen})}><img src = "https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" className = "pic"></img></a>
         <Press/>
-        <iframe className = "row mx-auto my-5" width="500" height="315" src="https://www.youtube.com/embed/n9eHtXAHInA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className = "row mx-auto my-5" width="400" height="315" src="https://www.youtube.com/embed/n9eHtXAHInA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <Modal isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})} style={
             {
               overlay:{

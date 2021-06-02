@@ -24,8 +24,8 @@
   border: 1px solid black;
   background: #fff;
   overflow: auto;
-  WebkitOverflowScrolling: touch;
-  borderRadius: 4px;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
   outline: none;
 }
 .emailOverlay{
@@ -34,7 +34,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  backgroundColor: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 .albumPop{
   position: absolute;
@@ -42,11 +42,11 @@
   left: 38vw;
   right: 38vw;
   bottom: 30vh;
-  border: 1px solid red;
+  border: 1px solid black;
   background: #fff;
   overflow: auto;
-  WebkitOverflowScrolling: touch;
-  borderRadius: 4px;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
   outline: none;
 }
 .albumOverlay{
@@ -55,7 +55,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  backgroundColor: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 @media(max-width: 770px){
   .emailPop{
@@ -63,12 +63,12 @@
     top: 25vh;
     left: 10vw;
     right: 10vw;
-    bottom: 40vh;
+    bottom: 25vh;
     border: 1px solid black;
     background: #fff;
     overflow: auto;
-    WebkitOverflowScrolling: touch;
-    borderRadius: 4px;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 4px;
     outline: none;
   }
   .emailOverlay{
@@ -77,19 +77,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    backgroundColor: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);
   }
   .albumPop{
     position: absolute;
     top: 25vh;
-    left: 35vw;
-    right: 35vw;
+    left: 20vw;
+    right: 20vw;
     bottom: 40vh;
     border: 1px solid black;
     background: #fff;
     overflow: auto;
-    WebkitOverflowScrolling: touch;
-    borderRadius: 4px;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 4px;
     outline: none;
   }
   .albumOverlay{
@@ -98,6 +98,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    backgroundColor: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);
   }
 }

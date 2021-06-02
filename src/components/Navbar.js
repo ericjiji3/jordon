@@ -18,7 +18,7 @@ class Navbar extends React.Component{
 
   render(){
     return(
-      <nav className = "tab" style = {{height: "500px"}}>
+      <nav className = "tab" style = {{height: "575px"}}>
           <ul className = "tabs list-unstyled text-center">
                 <li className = "tab py-4">
                   <Link to = {NavbarData[0].path} className = {NavbarData[0].cName} style = {{textDecoration: "none"}}>
