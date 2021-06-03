@@ -57,7 +57,7 @@
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.75);
 }
-@media(max-width: 770px){
+@media(max-width: 850px){
   .emailPop{
     position: absolute;
     top: 225px;
@@ -81,7 +81,7 @@
   }
   .albumPop{
     position: absolute;
-    top: 250px;
+    top: 200px;
     left: 25px;
     right: 25px;
     bottom: 250px;
