@@ -67,29 +67,29 @@
   }
 
   .pic1{
-    width: 30vw;
+    width: 45vw;
     height: 30vh;
     border-radius: 10px;
   }
   .pic2{
-    width: 30vw;
+    width: 45vw;
     height: 30vh;
     border-radius: 10px;
   }
   .pic3{
-    width: 30vw;
+    width: 47vw;
     height: 30vh;
     border-radius: 10px;
   }
   .pic4{
-    width: 30vw;
+    width: 45vw;
     height: 30vh;
     border-radius: 10px;
   }
   .rightArrow{
     position: absolute;
     top: 47%;
-    right: 5vw;
+    right: 1vw;
     font-size: 2rem;
     cursor: pointer;
     user-select: none;
@@ -98,7 +98,7 @@
   .leftArrow{
     position: absolute;
     top: 47%;
-    left: 5vw;
+    left: 1vw;
     font-size: 2rem;
     cursor: pointer;
     user-select: none;

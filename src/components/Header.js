@@ -3,8 +3,8 @@ import styles from "./Header.css";
 
 function Header(){
   return(
-    <div className = "text-center">
-      <h1 className = "head mt-4">JORDON</h1>
+    <div>
+      <h3 className = "head text-center mx-auto mt-4">JORDON</h3>
     </div>
   )
 }

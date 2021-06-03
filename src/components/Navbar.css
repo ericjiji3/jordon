@@ -17,10 +17,10 @@
 }
 .emailPop{
   position: absolute;
-  top: 25vh;
-  left: 35vw;
-  right: 35vw;
-  bottom: 40vh;
+  top: 200px;
+  left: 400px;
+  right: 400px;
+  bottom: 200px;
   border: 1px solid black;
   background: #fff;
   overflow: auto;
@@ -60,10 +60,10 @@
 @media(max-width: 770px){
   .emailPop{
     position: absolute;
-    top: 25vh;
-    left: 10vw;
-    right: 10vw;
-    bottom: 25vh;
+    top: 225px;
+    left: 25px;
+    right: 25px;
+    bottom: 225px;
     border: 1px solid black;
     background: #fff;
     overflow: auto;
@@ -81,10 +81,10 @@
   }
   .albumPop{
     position: absolute;
-    top: 25vh;
-    left: 20vw;
-    right: 20vw;
-    bottom: 40vh;
+    top: 250px;
+    left: 25px;
+    right: 25px;
+    bottom: 250px;
     border: 1px solid black;
     background: #fff;
     overflow: auto;

@@ -3,6 +3,7 @@
 }
 .header{
   background-clip: content-box;
+  padding: 0px;
 }
 body{
   /* background-color: rgb(230, 242, 255); */

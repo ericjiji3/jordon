@@ -34,12 +34,12 @@ class SignUp extends Component{
         <form className = "my-4" onSubmit = {this.handleSubmit}>
           <h4 className = "emailHead text-center my-3">SIGNUP FOR NOTIFICATIONS</h4>
           <div className = "row px-3">
-            <label className = "labels col-md-6">
+            <label className = "labels col-sm-6">
               First Name:
               <br/>
               <input type = 'text' name = "fName" onChange = {this.handleChange}></input>
             </label>
-            <label className = "labels col-md-6">
+            <label className = "labels col-sm-6">
               Last Name:
               <br/>
               <input type = 'text' name = "lName" onChange = {this.handleChange}></input>

@@ -17,8 +17,9 @@ function Press(){
         <a href = "https://www.youtube.com/watch?v=SW-BU6keEUw"><button className = "button">Read More</button></a>
       </figure>
       <figure className = "col-md-4 text-center">
-        
+
       </figure>
+
     </div>
   )
 }
