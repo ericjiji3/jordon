@@ -20,7 +20,7 @@
   top: 200px;
   left: 600px;
   right: 600px;
-  bottom: 350px;
+  bottom: 400px;
   border: 1px solid black;
   background: #fff;
   padding-left: 10px;
@@ -80,108 +80,6 @@
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.75);
 }
-@media(max-width: 2000px){
-  .emailPop{
-    position: absolute;
-    top: 210px;
-    left: 400px;
-    right: 400px;
-    bottom: 210px;
-    border: 1px solid black;
-    background: #fff;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 4px;
-    outline: none;
-  }
-  .emailOverlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.75);
-  }
-  .albumPop{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    vertical-align: middle;
-    text-align: center;
-    top: 100px;
-    left: 550px;
-    right: 550px;
-    bottom: 150px;
-    border: 1px solid black;
-    background: #fff;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 4px;
-    outline: none;
-  }
-  .albumOverlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.75);
-  }
-}
-@media(max-width: 1500px){
-  .emailPop{
-    position: absolute;
-    top: 125px;
-    left: 300px;
-    right: 300px;
-    bottom: 120px;
-    border: 1px solid black;
-    background: #fff;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 4px;
-    outline: none;
-  }
-  .emailOverlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.75);
-  }
-  .albumPop{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    vertical-align: middle;
-    text-align: center;
-    top: 75px;
-    left: 400px;
-    right: 400px;
-    bottom: 75px;
-    border: 1px solid black;
-    background: #fff;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 4px;
-    outline: none;
-  }
-  .albumOverlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.75);
-  }
-}
 @media(max-width: 850px){
   .emailPop{
     position: absolute;
@@ -191,7 +89,7 @@
     bottom: 225px;
     border: 1px solid black;
     background: #fff;
-    overflow: hidden;
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
     border-radius: 4px;
     outline: none;
@@ -213,7 +111,7 @@
     bottom: 250px;
     border: 1px solid black;
     background: #fff;
-    overflow: hidden;
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
     border-radius: 4px;
     outline: none;
