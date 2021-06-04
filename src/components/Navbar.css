@@ -89,7 +89,7 @@
     bottom: 210px;
     border: 1px solid black;
     background: #fff;
-    overflow: hidden;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     border-radius: 4px;
     outline: none;
@@ -134,13 +134,13 @@
 @media(max-width: 1500px){
   .emailPop{
     position: absolute;
-    top: 175px;
-    left: 350px;
-    right: 350px;
-    bottom: 175px;
+    top: 125px;
+    left: 300px;
+    right: 300px;
+    bottom: 120px;
     border: 1px solid black;
     background: #fff;
-    overflow: hidden;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     border-radius: 4px;
     outline: none;
@@ -191,7 +191,7 @@
     bottom: 225px;
     border: 1px solid black;
     background: #fff;
-    overflow: auto;
+    overflow: hidden;
     -webkit-overflow-scrolling: touch;
     border-radius: 4px;
     outline: none;
@@ -213,7 +213,7 @@
     bottom: 250px;
     border: 1px solid black;
     background: #fff;
-    overflow: auto;
+    overflow: hidden;
     -webkit-overflow-scrolling: touch;
     border-radius: 4px;
     outline: none;
