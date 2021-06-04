@@ -1,20 +1,24 @@
 import React from "react";
 import styles from "./press.css";
+import album from "./pics/album.jpeg";
+import {Link} from "react-router-dom";
 
 function Press(){
   return(
     <div className = "press row">
-      <div className = "row py-2">
+      <div className = "row py-1">
         <h1 className = "words col-md-3 text-center">PRESS</h1>
       </div>
       <figure className = "col-md-4 text-center">
 
       </figure>
       <figure className = "col-md-4 text-center">
-        <img src = "https://nas-national-prod.s3.amazonaws.com/styles/hero_image/s3/sfw_15586958314_eabee7f9c4_o.jpg?itok=Kd8pQv-u" width = "225"></img>
-        <h5 className = "head2 py-1">WASSUP</h5>
-        <p className = "p2">his knees weak arms are sweaty theres vomit and his sweater already moms spaghetti</p>
-        <a href = "https://www.youtube.com/watch?v=SW-BU6keEUw"><button className = "button">Read More</button></a>
+        <img src = {album} width = "175"></img>
+        <h5 className = "head2 py-1">PROFILE</h5>
+        <p className = "p2">Learn more about the artist behind his music and his work on and off the stage</p>
+        <Link to = "/about" className = "About" style = {{textDecoration: "none"}}>
+          <button className = "button">Read More</button>
+        </Link>
       </figure>
       <figure className = "col-md-4 text-center">
 

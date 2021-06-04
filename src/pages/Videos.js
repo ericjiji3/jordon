@@ -1,5 +1,7 @@
 import React from "react"
 import Navbar from "../components/Navbar.js";
+import styles from "./Videos.css";
+
 
 function Videos(){
   return(
@@ -8,9 +10,9 @@ function Videos(){
       <div className = "col-md-3">
         <Navbar/>
       </div>
-      <div className = "col-md-9">
-        <iframe className = "row mx-auto my-3" width="400" height="315" src="https://www.youtube.com/embed/n9eHtXAHInA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe className = "row mx-auto my-3" width="400" height="315" src="https://www.youtube.com/embed/-Ib_SfYQpq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div className = "col-md-9 text-center">
+        <iframe className = "coffee" src="https://www.youtube.com/embed/jajJPlCs2nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
       </div>
     </div>
     </div>

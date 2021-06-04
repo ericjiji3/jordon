@@ -26,7 +26,7 @@ class Home extends React.Component{
           </div>
         </div>
         <div>
-          <a className = "linkPic" href = "https://www.youtube.com/"><img src = "https://lh4.googleusercontent.com/tcX3v97-aeHe4gTEek5frY0LOCvnUXKc_zNKzBfjdHwTl7dYjDn9tv7fMETUgWbGOJIlC-tf9hr2Swg1PADfW7lEer9Pu_7yEODFeNe5V-Pk7oIUsZkg8N7LfvtlLVYIroF3XZSJ" className = "pic"></img></a>
+          <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><img src = "https://lh4.googleusercontent.com/tcX3v97-aeHe4gTEek5frY0LOCvnUXKc_zNKzBfjdHwTl7dYjDn9tv7fMETUgWbGOJIlC-tf9hr2Swg1PADfW7lEer9Pu_7yEODFeNe5V-Pk7oIUsZkg8N7LfvtlLVYIroF3XZSJ" className = "pic"></img></a>
         </div>
         <Press/>
         <iframe className = "row mx-auto my-5" src="https://www.youtube.com/embed/n9eHtXAHInA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
