@@ -132,7 +132,7 @@
 @media(max-width: 1500px){
   .slides{
     position: relative;
-    height: 65vh;
+    height: 75vh;
     width: 50vw;
     display: flex;
     justify-content: center;
