@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import {SlideData} from "./SlideData";
 import {FaArrowLeft, FaArrowRight} from "react-icons/fa";
 import {BiLeftArrowAlt, BiRightArrowAlt} from "react-icons/bi";
+import {TiArrowLeftOutline, TiArrowRightOutline} from "react-icons/ti";
 import styles from "./Slide.css";
 
 
@@ -22,8 +23,8 @@ function Slide(props){
   }
   return(
     <div className = "slides">
-      <FaArrowLeft className = "leftArrow" onClick = {prevSlide}/>
-      <FaArrowRight className = "rightArrow" onClick = {nextSlide}/>
+      <TiArrowLeftOutline className = "leftArrow" onClick = {prevSlide}/>
+      <TiArrowRightOutline className = "rightArrow" onClick = {nextSlide}/>
       {SlideData.map((slide, index) => {
         return(
           <div className = {index === current ? 'slide active' : 'slideInactive'} key = {index}>

@@ -1,0 +1,10 @@
+.banner{
+  width: 1200px;
+  height: 471px;
+}
+@media(max-width: 850px){
+  .banner{
+    width: 313px;
+    height: 123px;
+  }
+}

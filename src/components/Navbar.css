@@ -18,12 +18,13 @@
 .emailPop{
   position: absolute;
   top: 200px;
-  left: 400px;
-  right: 400px;
-  bottom: 200px;
+  left: 600px;
+  right: 600px;
+  bottom: 350px;
   border: 1px solid black;
   background: #fff;
-  overflow: auto;
+  padding-left: 10px;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
   border-radius: 4px;
   outline: none;
@@ -31,20 +32,41 @@
 .emailOverlay{
   position: fixed;
   top: 0;
+  z-index: 2;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.75);
 }
+.bold{
+  font-family: 'SpaceMono';
+}
+.t1, .t2, .t3, .t4, .t5, .t6{
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+.l1, .l2, .l3, .l4, .l5, .l6{
+  text-decoration: none;
+  color: black;
+  width: max-content;
+  margin: auto;
+}
 .albumPop{
+  font-family: 'SpaceMonoReg', monospace;
   position: absolute;
-  top: 25vh;
-  left: 38vw;
-  right: 38vw;
-  bottom: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  top: 17vh;
+  left: 39vw;
+  right: 39vw;
+  bottom: 20vh;
   border: 1px solid black;
   background: #fff;
-  overflow: auto;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
   border-radius: 4px;
   outline: none;
@@ -53,6 +75,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.75);
@@ -76,6 +99,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.75);
   }
@@ -97,6 +121,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.75);
   }

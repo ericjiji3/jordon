@@ -4,7 +4,8 @@ import {
   faYoutube,
   faFacebookF,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faSpotify
 } from "@fortawesome/free-brands-svg-icons";
 
 

@@ -2,12 +2,32 @@
   margin-left: 5vw;
   margin-right: 5vw;
 }
+.linkPic{
+  display: block;
+  width: 15rem;
+  height: 15rem;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
 .pic{
   width: 15rem;
   height: 15rem;
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-bottom: 3vh;
   cursor: pointer;
+  border: 5px solid black;
+}
+@media(max-width: 850px){
+  .pic{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    cursor: pointer;
+  }
 }

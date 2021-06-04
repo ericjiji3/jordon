@@ -1,0 +1,51 @@
+.about{
+  width: 100%;
+}
+.aboutPop{
+  font-family: 'SpaceMonoReg', monospace;
+  position: absolute;
+  text-align: center;
+  top: 17vh;
+  left: 39vw;
+  right: 39vw;
+  bottom: 25vh;
+  border: 1px solid black;
+  background: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+}
+.aboutOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+@media(max-width: 850px){
+  .aboutPop{
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    right: 25px;
+    bottom: 250px;
+    border: 1px solid black;
+    background: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 4px;
+    outline: none;
+  }
+  .aboutOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+}

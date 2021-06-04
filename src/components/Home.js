@@ -18,14 +18,16 @@ class Home extends React.Component{
     return(
       <div>
         <div className = "row" style={{marginLeft: "5vw", marginRight: "5vw"}}>
-          <div className = "col-md-3">
+          <div className = "col-sm-3">
             <Navbar/>
           </div>
-          <div className = "col-md-9">
+          <div className = "col-sm-9">
             <Slide slides = {SlideData}/>
           </div>
         </div>
-        <a href = "https://www.youtube.com/"><img src = "https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" className = "pic"></img></a>
+        <div>
+          <a className = "linkPic" href = "https://www.youtube.com/"><img src = "https://lh4.googleusercontent.com/tcX3v97-aeHe4gTEek5frY0LOCvnUXKc_zNKzBfjdHwTl7dYjDn9tv7fMETUgWbGOJIlC-tf9hr2Swg1PADfW7lEer9Pu_7yEODFeNe5V-Pk7oIUsZkg8N7LfvtlLVYIroF3XZSJ" className = "pic"></img></a>
+        </div>
         <Press/>
         <iframe className = "row mx-auto my-5" src="https://www.youtube.com/embed/n9eHtXAHInA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <Modal isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})} style={

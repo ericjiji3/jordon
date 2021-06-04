@@ -5,44 +5,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3.5em;
+  margin-bottom: 3em;
 }
 
 .pic1{
-  width: 25vw;
-  height: 70vh;
+  width: 499.69px;
+  height: 750px;
   border-radius: 10px;
+  /* width: 1066px;
+  height: 1600px; */
 }
 .pic2{
-  width: 25vw;
-  height: 70vh;
+  width: 499.69px;
+  height: 750px;
   border-radius: 10px;
 }
 .pic3{
-  width: 28vw;
-  height: 70vh;
+  width: 562.5px;
+  height: 750px;
   border-radius: 10px;
 }
 .pic4{
-  width: 28vw;
-  height: 70vh;
+  width: 562.5px;
+  height: 750px;
   border-radius: 10px;
+}
+.pic5{
+  width: 1000px;
+  height: 668.125px;
+  border-radius:10px
 }
 .rightArrow{
   position: absolute;
   top: 47%;
-  right: 5vw;
-  font-size: 2rem;
+  right: 1vw;
+  font-size: 3rem;
+  z-index: 1;
   cursor: pointer;
   user-select: none;
+  color: black;
 }
 
 .leftArrow{
   position: absolute;
   top: 47%;
-  left: 5vw;
-  font-size: 2rem;
+  left: 1vw;
+  font-size: 3rem;
+  z-index: 1;
   cursor: pointer;
   user-select: none;
+  color: black;
 }
 
 .slideInactive{
@@ -56,14 +69,16 @@
   transition-duration: 1s;
 }
 
-@media(max-width: 770px){
+@media(max-width: 850px){
   .slides{
     position: relative;
-    height: 40vh;
+    height: 35vh;
     width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .pic1{
@@ -86,20 +101,25 @@
     height: 30vh;
     border-radius: 10px;
   }
+  .pic5{
+    width: 250px;
+    height: 167.03px;
+    border-radius:10px
+  }
   .rightArrow{
     position: absolute;
-    top: 47%;
-    right: 1vw;
-    font-size: 2rem;
+    top: 44%;
+    right: 7vw;
+    font-size: 2.5rem;
     cursor: pointer;
     user-select: none;
   }
 
   .leftArrow{
     position: absolute;
-    top: 47%;
-    left: 1vw;
-    font-size: 2rem;
+    top: 44%;
+    left: 7vw;
+    font-size: 2.5rem;
     cursor: pointer;
     user-select: none;
   }

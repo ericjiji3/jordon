@@ -5,6 +5,14 @@ import styles from "./Navbar.css";
 import SocialBar from "./SocialBar";
 import SignUp from "./SignUp";
 import Modal from "react-modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSpotify,
+  faApple,
+  faItunesNote,
+  faAmazon,
+  faGooglePlay
+} from "@fortawesome/free-brands-svg-icons";
 
 
 class Navbar extends React.Component{
@@ -61,7 +69,33 @@ class Navbar extends React.Component{
             <SignUp/>
           </Modal>
           <Modal className = "albumPop" overlayClassName = "albumOverlay" isOpen = {this.state.isOpen2} onRequestClose = {() => this.setState({isOpen2: !this.state.isOpen2})}>
-            <a href = "https://www.youtube.com/"><img src = "https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" className = "albumPic"></img></a>
+            <div className = "bold row pt-4 pb-3">
+              <h2>LISTEN ON:</h2>
+            </div>
+            <a className = "l1 row d-block" href = "https://open.spotify.com/artist/6dZMYil8Wj3zvMFS5hoA8U">
+                <FontAwesomeIcon icon={faSpotify} size = "4x"/>
+                <h3 className = "t1 d-inline">SPOTIFY</h3>
+            </a>
+            <a className = "l2 row d-block" href = "https://music.apple.com/us/artist/jordon/1469184845">
+              <FontAwesomeIcon icon={faApple} size = "4x"/>
+              <h3 className = "t2 d-inline">APPLE</h3>
+            </a>
+            <a className = "l3 row d-block" href = "https://open.spotify.com/artist/6dZMYil8Wj3zvMFS5hoA8U">
+              <FontAwesomeIcon icon={faSpotify} size = "4x"/>
+              <h3 className = "t3 d-inline">TIDAL</h3>
+            </a>
+            <a className = "l4 row d-block" href = "https://open.spotify.com/artist/6dZMYil8Wj3zvMFS5hoA8U">
+              <FontAwesomeIcon icon={faItunesNote} size = "4x"/>
+              <h3 className = "t4 d-inline">ITUNES</h3>
+            </a>
+            <a className = "l5 row d-block" href = "https://open.spotify.com/artist/6dZMYil8Wj3zvMFS5hoA8U">
+              <FontAwesomeIcon icon={faAmazon} size = "4x"/>
+              <h3 className = "t5 d-inline">AMAZON</h3>
+            </a>
+            <a className = "l6 row d-block mb-3" href = "https://open.spotify.com/artist/6dZMYil8Wj3zvMFS5hoA8U">
+              <FontAwesomeIcon icon={faGooglePlay} size = "4x"/>
+              <h3 className = "t6 d-inline">GOOGLE PLAY</h3>
+            </a>
           </Modal>
       </nav>
   );
