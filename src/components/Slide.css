@@ -68,7 +68,128 @@
   opacity: 1;
   transition-duration: 1s;
 }
+@media(max-width: 2000px){
+  .slides{
+    position: relative;
+    height: 75vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+  }
 
+  .pic1{
+    width: 433px;
+    height: 650px;
+    border-radius: 10px;
+    /* width: 1066px;
+    height: 1600px; */
+  }
+  .pic2{
+    width: 433px;
+    height: 650px;
+    border-radius: 10px;
+  }
+  .pic3{
+    width: 488px;
+    height: 650px;
+    border-radius: 10px;
+  }
+  .pic4{
+    width: 488px;
+    height: 650px;
+    border-radius: 10px;
+  }
+  .pic5{
+    width: 700px;
+    height: 468px;
+    border-radius:10px
+  }
+  .rightArrow{
+    position: absolute;
+    top: 47%;
+    right: 1vw;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+  }
+
+  .leftArrow{
+    position: absolute;
+    top: 47%;
+    left: 1vw;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+  }
+}
+@media(max-width: 1500px){
+  .slides{
+    position: relative;
+    height: 65vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+  }
+
+  .pic1{
+    width: 366px;
+    height: 550px;
+    border-radius: 10px;
+    /* width: 1066px;
+    height: 1600px; */
+  }
+  .pic2{
+    width: 366px;
+    height: 550px;
+    border-radius: 10px;
+  }
+  .pic3{
+    width: 413px;
+    height: 550px;
+    border-radius: 10px;
+  }
+  .pic4{
+    width: 413px;
+    height: 550px;
+    border-radius: 10px;
+  }
+  .pic5{
+    width: 700px;
+    height: 468px;
+    border-radius:10px
+  }
+  .rightArrow{
+    position: absolute;
+    top: 47%;
+    right: 1vw;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+  }
+
+  .leftArrow{
+    position: absolute;
+    top: 47%;
+    left: 1vw;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+  }
+}
 @media(max-width: 850px){
   .slides{
     position: relative;
