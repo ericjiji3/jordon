@@ -15,6 +15,7 @@ import {
   faYoutube,
   faDeezer
 } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import SideBar from "./SideBar";
 
 
@@ -30,7 +31,7 @@ class Navbar extends React.Component{
   render(){
     return(
       <nav className = "tab">
-          <button className = "navButt" onClick = {() => this.setState({showNav: !this.state.showNav})}>Open</button>
+          <button className = "navButt" id = {this.state.showNav ? "butH" : "butA"} onClick = {() => this.setState({showNav: !this.state.showNav})}><FontAwesomeIcon icon={faBars} size = "2x"/></button>
           <ul className = "tabs list-unstyled text-center" id = {this.state.showNav ? "hidden" : "active"}>
                 <li className = "tab py-4">
                   <Link to = {NavbarData[0].path} className = {NavbarData[0].cName} style = {{textDecoration: "none"}}>

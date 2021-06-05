@@ -183,9 +183,6 @@
   .tab{
     height: auto;
   }
-  .tabs{
-    display: none;
-  }
   .emailOverlay{
     position: fixed;
     top: 0;
@@ -221,6 +218,18 @@
     display: flex;
     text-align: center;
     margin: auto;
+    background: none;
+  	color: inherit;
+  	border: none;
+  	padding: 0;
+  	font: inherit;
+  	cursor: pointer;
+  	outline: inherit;
+  }
+  #butA{
+    background-color: blue;
+    left: 0;
+    right: 0;
   }
   #active{
     position: absolute;
@@ -229,10 +238,14 @@
     flex-direction: column;
     align-items: center;
     z-index: 950;
-    left: 0px;
     display: flex;
     height: auto;
     padding-bottom: 30px;
     background-color: blue;
+
+  }
+  #hidden{
+    display: none;
+
   }
 }

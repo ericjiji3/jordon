@@ -194,7 +194,8 @@
   .slides{
     position: relative;
     height: 35vh;
-    width: 80vw;
+    width: 50%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +231,7 @@
   .rightArrow{
     position: absolute;
     top: 44%;
-    right: 7vw;
+    right: -15vw;
     font-size: 2.5rem;
     cursor: pointer;
     user-select: none;
@@ -239,7 +240,7 @@
   .leftArrow{
     position: absolute;
     top: 44%;
-    left: 7vw;
+    left: -15vw;
     font-size: 2.5rem;
     cursor: pointer;
     user-select: none;
