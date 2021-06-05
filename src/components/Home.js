@@ -6,6 +6,8 @@ import Press from "./Press";
 import Navbar from "./Navbar";
 import styles from "./Home.css";
 import Modal from "react-modal";
+import trailer from "./pics/trailer.MOV";
+import pic6 from "./pics/pic6.png";
 
 class Home extends React.Component{
   constructor(props){
@@ -26,10 +28,13 @@ class Home extends React.Component{
           </div>
         </div>
         <div>
-          <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><img src = "https://lh4.googleusercontent.com/tcX3v97-aeHe4gTEek5frY0LOCvnUXKc_zNKzBfjdHwTl7dYjDn9tv7fMETUgWbGOJIlC-tf9hr2Swg1PADfW7lEer9Pu_7yEODFeNe5V-Pk7oIUsZkg8N7LfvtlLVYIroF3XZSJ" className = "pic"></img></a>
+          <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><img src = {pic6} className = "pic"></img></a>
         </div>
         <Press/>
-        <iframe className = "row mx-auto my-5" src="https://www.youtube.com/embed/n9eHtXAHInA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video className = "row mx-auto mb-5" width="320" height="240" controls>
+            <source src={trailer}>
+            </source>
+        </video>
         <Modal isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})} style={
             {
               overlay:{

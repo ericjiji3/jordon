@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./press.css";
-import album from "./pics/album.jpeg";
+import pic7 from "./pics/pic7.jpeg";
 import {Link} from "react-router-dom";
 
 function Press(){
@@ -13,7 +13,7 @@ function Press(){
 
       </figure>
       <figure className = "col-md-4 text-center">
-        <img src = {album} width = "175"></img>
+        <img src = {pic7} width = "150"></img>
         <h5 className = "head2 py-1">PROFILE</h5>
         <p className = "p2">Learn more about the artist behind his music and his work on and off the stage</p>
         <Link to = "/about" className = "About" style = {{textDecoration: "none"}}>

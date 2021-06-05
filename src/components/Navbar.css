@@ -172,18 +172,13 @@
   }
   .albumPop{
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 25px;
     right: 25px;
     bottom: 250px;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    vertical-align: middle;
-    text-align: center;
     background: #fff;
-    overflow:auto;
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
     border-radius: 4px;
     outline: none;
