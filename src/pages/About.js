@@ -24,7 +24,7 @@ class About extends React.Component{
   render(){
     return(
     <div>
-      <div className = "row mb-5" style = {{marginLeft: "5vw", marginRight: "5vw"}}>
+      <div className = "row mb-5" style = {{marginLeft: "-4vw", marginRight: "-4vw"}}>
         <div className = "col-md-3">
           <Navbar/>
         </div>

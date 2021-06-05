@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar.js"
 function Shop(){
   return(
     <div>
-    <div className = "row" style = {{marginLeft: "5vw", marginRight: "5vw"}}>
+    <div className = "row" style = {{marginLeft: "-4vw", marginRight: "-4vw"}}>
       <div className = "col-md-3">
         <Navbar/>
       </div>

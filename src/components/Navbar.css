@@ -182,6 +182,10 @@
   }
   .tab{
     height: auto;
+    left: -50px;
+  }
+  .buttonDiv{
+
   }
   .emailOverlay{
     position: fixed;
@@ -217,7 +221,7 @@
   .navButt{
     display: flex;
     text-align: center;
-    margin: auto;
+    justify-content: center;
     background: none;
   	color: inherit;
   	border: none;
@@ -225,6 +229,7 @@
   	font: inherit;
   	cursor: pointer;
   	outline: inherit;
+    
   }
   #butA{
     background-color: blue;

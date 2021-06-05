@@ -19,7 +19,7 @@ class Home extends React.Component{
   render(){
     return(
       <div>
-        <div className = "row" style={{marginLeft: "5vw", marginRight: "5vw"}}>
+        <div className = "row" style={{marginLeft: "-4vw", marginRight: "-4vw"}}>
           <div className = "col-sm-3">
             <Navbar/>
           </div>
