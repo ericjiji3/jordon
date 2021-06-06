@@ -28,7 +28,7 @@ class About extends React.Component{
         <div className = "col-md-3">
           <Navbar/>
         </div>
-        <div className = "col-md-3">
+        <div className = "col-md-3 mt-3">
           <img className = "about" src = {pic1}></img>
         </div>
         <div className = "col-md-5">

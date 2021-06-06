@@ -193,7 +193,7 @@
 @media(max-width: 850px){
   .slides{
     position: relative;
-    height: 35vh;
+    height: 45vh;
     width: 50%;
     margin: auto;
     display: flex;
@@ -201,46 +201,52 @@
     align-items: center;
     margin-top: 0px;
     margin-bottom: 0px;
+    top: 0%;
+  }
+  .slide.active{
+    position: relative;
+    opacity: 1;
+    transition-duration: 1s;
+    top: -5%
   }
 
   .pic1{
-    width: 45vw;
-    height: 30vh;
+    width: 200px;
+    height: 300px;
     border-radius: 10px;
   }
   .pic2{
-    width: 45vw;
-    height: 30vh;
+    width: 200px;
+    height: 300px;
     border-radius: 10px;
   }
   .pic3{
-    width: 47vw;
-    height: 30vh;
+    width: 250px;
+    height: 333px;
     border-radius: 10px;
   }
   .pic4{
-    width: 45vw;
-    height: 30vh;
+    width: 250px;
+    height: 333.75px;
     border-radius: 10px;
   }
   .pic5{
-    width: 250px;
-    height: 167.03px;
+    width: 350px;
+    height: 255.842px;
     border-radius:10px
   }
   .rightArrow{
     position: absolute;
-    top: 44%;
-    right: -15vw;
+    top: 90%;
+    right: 8vw;
     font-size: 2.5rem;
     cursor: pointer;
     user-select: none;
   }
-
   .leftArrow{
     position: absolute;
-    top: 44%;
-    left: -15vw;
+    top: 90%;
+    left: 8vw;
     font-size: 2.5rem;
     cursor: pointer;
     user-select: none;

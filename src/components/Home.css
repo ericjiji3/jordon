@@ -30,8 +30,13 @@
     margin-bottom: 1em;
     cursor: pointer;
   }
-  .slide{
-  
+  .linkPic{
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 3em;
   }
 
 }

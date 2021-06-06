@@ -20,7 +20,7 @@ class Home extends React.Component{
     return(
       <div>
         <div className = "row" style={{marginLeft: "-4vw", marginRight: "-4vw"}}>
-          <div className = "col-sm-3">
+          <div className = "col-sm-3 mb-1">
             <Navbar/>
           </div>
           <div className = "slide col-sm-9">

@@ -181,7 +181,6 @@
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
-
   }
   .tab{
     height: auto;
@@ -287,9 +286,10 @@
     width: -webkit-fill-available;
   }
   #hidden{
-    opacity: 0;
+    /* opacity: 0;
     height: 0;
-    margin: 0;
+    margin: 0; */
+    display:none;
   }
 
 }

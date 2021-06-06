@@ -50,13 +50,7 @@ text-align: center;
 letter-spacing: 0px;
 color: #FCFCFC;
 opacity: 1; */
-.but{
-  background-color: inherit;
-  border: 2px solid black;
-  letter-spacing: .1em;
-  font-family: 'SpaceMono';
-  padding: 3px 10px;
-}
+
 .button:hover{
   background-color: black;
   color: white;
@@ -65,7 +59,6 @@ opacity: 1; */
   .button{
     font-family: 'SpaceMono', monospace;
     font-size: .7em;
-    background: #3C3C3C 0% 0% no-repeat padding-box;
     opacity: 1;
     outline: none;
     border: none;
@@ -73,8 +66,16 @@ opacity: 1; */
     width: 20vw;
     text-align: center;
     letter-spacing: 0px;
-    color: #FCFCFC;
+    color: black;
     opacity: 1;
+    background-color: inherit;
+    border: 2px solid black;
+    letter-spacing: .1em;
+    padding: 3px 10px;
+  }
+  .button:hover{
+    background-color: black;
+    color: white;
   }
   .pressDiv{
     padding-left:0;
