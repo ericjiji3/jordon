@@ -7,12 +7,13 @@
   opacity: 1;
 }
 
-/* @media (max-width: 770px){
+@media (max-width: 850px){
   .head{
     font-family: 'DaysOne', sans-serif;
-    letter-spacing: .25em;
-    margin-right: -.25em;
+    text-indent: 1.25em;
+    letter-spacing: 1.25em;
     color: #000000;
     opacity: 1;
+    height: .3em;
   }
-} */
+}

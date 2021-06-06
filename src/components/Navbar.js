@@ -31,10 +31,8 @@ class Navbar extends React.Component{
   render(){
     return(
       <nav className = "tab">
-        <div className = "buttonDiv row">
-          <button className = "navButt" id = {this.state.showNav ? "butA" : "butH"} onClick = {() => this.setState({showNav: !this.state.showNav})}><FontAwesomeIcon icon={faBars} size = "2x"/></button>
-        </div>
         <div className = "listClass" id = {this.state.showNav ? "activeDiv" : "hiddenDiv"}>
+          <button className = "navButt" id = {this.state.showNav ? "butA" : "butH"} onClick = {() => this.setState({showNav: !this.state.showNav})}><FontAwesomeIcon className = "fas fa-bars" id = {this.state.showNav ? "barA" : "barH"} icon={faBars} size = "2x"/></button>
           <ul className = "tabs list-unstyled text-center" id = {this.state.showNav ? "active" : "hidden"}>
                 <li className = "tab py-4">
                   <Link to = {NavbarData[0].path} className = {NavbarData[0].cName} style = {{textDecoration: "none"}}>

@@ -47,6 +47,9 @@
 .bold{
   font-family: 'SpaceMono';
 }
+.listClass{
+  float: right;
+}
 .t1, .t2, .t3, .t4, .t5, .t6{
   position: relative;
   bottom: 10px;
@@ -185,6 +188,7 @@
     left: -50px;
 
   }
+
   .emailOverlay{
     position: fixed;
     top: 0;
@@ -231,13 +235,32 @@
     margin-bottom: -1px;
 
   }
+  .buttonDiv{
+      text-align: center;
+      justify-content: center;
+      left: 20px;
+  }
+
+
   #butA{
-    background-color: blue;
+
     left: 0;
     right: 0;
+    transform: rotate(90deg);
+    transition: .3s ease-in-out;
+    padding: 0 0 0 20px;
+
+
+  }
+
+
+  #butH{
+    left: 0;
+    right: 0;
+    margin: auto;
     transition: .3s ease-in-out;
   }
-  #active{
+  #activeDiv{
     position: absolute;
     left: 0;
     right: 0;
@@ -247,14 +270,26 @@
     display: flex;
     height: auto;
     padding-bottom: 30px;
-    background-color: blue;
+    background-color: #b3d8eb;
+    transition: .3s ease-in-out;
+    padding-bottom: 7px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 85%;
+    margin: auto;
+  }
+  #hiddenDiv{
 
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
   }
   #hidden{
-    display: none;
+    opacity: 0;
+    height: 0;
+    margin: 0;
+  }
 
-  }
-  #activeDiv{
-    transition: .3s ease-in-out;
-  }
 }

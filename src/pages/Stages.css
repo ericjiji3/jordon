@@ -10,7 +10,8 @@
 }
 @media(max-width: 850px){
   .banner{
-    width: 313px;
+    width: auto;
     height: 123px;
+    
   }
 }

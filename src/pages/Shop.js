@@ -8,7 +8,7 @@ function Shop(){
       <div className = "col-md-3">
         <Navbar/>
       </div>
-      <div className = "col-md-9 text-center my-auto">
+      <div className = "col-md-9 text-center my-auto mt-5">
         <h1>Coming Soon...</h1>
       </div>
     </div>

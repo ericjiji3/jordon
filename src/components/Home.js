@@ -23,7 +23,7 @@ class Home extends React.Component{
           <div className = "col-sm-3">
             <Navbar/>
           </div>
-          <div className = "col-sm-9">
+          <div className = "slide col-sm-9">
             <Slide slides = {SlideData}/>
           </div>
         </div>
