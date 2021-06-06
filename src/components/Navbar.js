@@ -25,17 +25,17 @@ class Navbar extends React.Component{
     this.state = {
       isOpen: false,
       isOpen2: false,
-      showNav: true
+      showNav: false
     };
   }
   render(){
     return(
       <nav className = "tab">
         <div className = "buttonDiv row">
-          <button className = "navButt" id = {this.state.showNav ? "butH" : "butA"} onClick = {() => this.setState({showNav: !this.state.showNav})}><FontAwesomeIcon icon={faBars} size = "2x"/></button>
+          <button className = "navButt" id = {this.state.showNav ? "butA" : "butH"} onClick = {() => this.setState({showNav: !this.state.showNav})}><FontAwesomeIcon icon={faBars} size = "2x"/></button>
         </div>
-
-          <ul className = "tabs list-unstyled text-center" id = {this.state.showNav ? "hidden" : "active"}>
+        <div className = "listClass" id = {this.state.showNav ? "activeDiv" : "hiddenDiv"}>
+          <ul className = "tabs list-unstyled text-center" id = {this.state.showNav ? "active" : "hidden"}>
                 <li className = "tab py-4">
                   <Link to = {NavbarData[0].path} className = {NavbarData[0].cName} style = {{textDecoration: "none"}}>
                     <span>{NavbarData[0].title}</span>
@@ -73,6 +73,7 @@ class Navbar extends React.Component{
                 </li>
                 <SocialBar/>
           </ul>
+          </div>
           <Modal className = "emailPop" overlayClassName = "emailOverlay" isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})}>
             <SignUp/>
           </Modal>
