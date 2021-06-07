@@ -15,6 +15,8 @@ import {
   faYoutube,
   faDeezer
 } from "@fortawesome/free-brands-svg-icons";
+import { IconContext } from "react-icons";
+import {FaBars} from 'react-icons/fa';
 
 
 class Navbar extends React.Component{
@@ -25,10 +27,12 @@ class Navbar extends React.Component{
       isOpen2: false
     };
   }
-
   render(){
     return(
-      <nav className = "tab" style = {{height: "575px"}}>
+      <nav className = "tab">
+          <IconContext.Provider value = {{className: 'hamburger'}}>
+            <FaBars/>
+          </IconContext.Provider>
           <ul className = "tabs list-unstyled text-center">
                 <li className = "tab py-4">
                   <Link to = {NavbarData[0].path} className = {NavbarData[0].cName} style = {{textDecoration: "none"}}>
@@ -60,13 +64,13 @@ class Navbar extends React.Component{
                     <span>{NavbarData[5].title}</span>
                   </Link>
                 </li>
-                <li className = "tab py-4">
+                <li className = "tabL py-4">
                   <Link to = {NavbarData[6].path} className = {NavbarData[6].cName} style = {{textDecoration: "none"}}>
                     <span>{NavbarData[6].title}</span>
                   </Link>
                 </li>
+                <SocialBar/>
           </ul>
-          <SocialBar/>
           <Modal className = "emailPop" overlayClassName = "emailOverlay" isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})}>
             <SignUp/>
           </Modal>
