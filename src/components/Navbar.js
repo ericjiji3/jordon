@@ -15,8 +15,7 @@ import {
   faYoutube,
   faDeezer
 } from "@fortawesome/free-brands-svg-icons";
-import { IconContext } from "react-icons";
-import {FaBars} from 'react-icons/fa';
+import SideBar from "./SideBar";
 
 
 class Navbar extends React.Component{
@@ -24,16 +23,15 @@ class Navbar extends React.Component{
     super(props);
     this.state = {
       isOpen: false,
-      isOpen2: false
+      isOpen2: false,
+      showNav: true
     };
   }
   render(){
     return(
       <nav className = "tab">
-          <IconContext.Provider value = {{className: 'hamburger'}}>
-            <FaBars/>
-          </IconContext.Provider>
-          <ul className = "tabs list-unstyled text-center">
+          <button className = "navButt" onClick = {() => this.setState({showNav: !this.state.showNav})}>Open</button>
+          <ul className = "tabs list-unstyled text-center" id = {this.state.showNav ? "hidden" : "active"}>
                 <li className = "tab py-4">
                   <Link to = {NavbarData[0].path} className = {NavbarData[0].cName} style = {{textDecoration: "none"}}>
                     <span>{NavbarData[0].title}</span>
