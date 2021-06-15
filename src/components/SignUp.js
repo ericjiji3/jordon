@@ -20,13 +20,35 @@ class SignUp extends Component{
   handleChange(event){
     let name = event.target.name
     let value = event.target.value
-    this.setState({[name]: value})
+    this.setState({
+      [name]: value,
+
+    })
   }
 
-  handleSubmit(event){
-    alert('First name: ' + this.state.fName + '\n' + 'Last name: ' + this.state.lName + '\n' + 'E-mail: ' + this.state.eMail + '\n' + 'Phone number: ' + this.state.number)
-
+  async handleSubmit(event){
     event.preventDefault()
+    try{
+      let result = await fetch("https://webhook.site/40267542-a30e-4f0f-a9ce-499579321e33",{
+        method: 'post',
+        mode: 'no-cors',
+        headers: {
+          'Accept': 'application/json',
+          'Content-type': 'application/json'
+
+        },
+        body: JSON.stringify({
+          firstName: this.state.fName,
+          lastName: this.state.lName,
+          eMail: this.state.eMail,
+          number: this.state.number
+
+        })
+      });
+      console.log(result)
+    }catch(e){
+      console.log(e);
+    }
   }
 
   render(){
