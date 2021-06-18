@@ -17,7 +17,7 @@ const app = express();
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "localhost",
+  host: "us-cdbr-east-04.cleardb.com",
   user: "be73d5ca2304c0",
   password: "75b19aa1",
   database: "jordonLive"
@@ -50,7 +50,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 //     console.log("1 record inserted");
 //   });
 // });
-app.listen(3001, () =>{
+app.listen(3000, () =>{
   console.log('please');
 })
 
