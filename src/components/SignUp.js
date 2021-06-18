@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Modal from 'react-modal';
 import styles from "./SignUp.css";
-
+import Axios from "axios";
 
 class SignUp extends Component{
   constructor(props){
@@ -26,29 +26,16 @@ class SignUp extends Component{
     })
   }
 
-  async handleSubmit(event){
+  handleSubmit(event){
     event.preventDefault()
-    try{
-      let result = await fetch("https://webhook.site/40267542-a30e-4f0f-a9ce-499579321e33",{
-        method: 'post',
-        mode: 'no-cors',
-        headers: {
-          'Accept': 'application/json',
-          'Content-type': 'application/json'
-
-        },
-        body: JSON.stringify({
-          firstName: this.state.fName,
-          lastName: this.state.lName,
-          eMail: this.state.eMail,
-          number: this.state.number
-
-        })
+    Axios.post("http://localhost:3001/api/insert", {
+      firstName: this.state.fName,
+      lastName: this.state.lName,
+      email: this.state.eMail,
+      number: this.state.number}).then(()=>{
+        alert('success!')
       });
-      console.log(result)
-    }catch(e){
-      console.log(e);
-    }
+    alert("success!")
   }
 
   render(){

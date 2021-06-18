@@ -34,37 +34,37 @@ class Navbar extends React.Component{
         <div className = "listClass" id = {this.state.showNav ? "activeDiv" : "hiddenDiv"}>
           <button className = "navButt" id = {this.state.showNav ? "butA" : "butH"} onClick = {() => this.setState({showNav: !this.state.showNav})}><FontAwesomeIcon className = "fas fa-bars" id = {this.state.showNav ? "barA" : "barH"} icon={faBars} size = "2x"/></button>
           <ul className = "tabs list-unstyled text-center" id = {this.state.showNav ? "active" : "hidden"}>
-                <li className = "tab py-4">
+                <li className = "tabU">
                   <Link to = {NavbarData[0].path} className = {NavbarData[0].cName} style = {{textDecoration: "none"}}>
                     <span>{NavbarData[0].title}</span>
                   </Link>
                 </li>
-                <li className = "tab py-4">
+                <li className = "tab">
                   <Link to = {NavbarData[1].path} className = {NavbarData[1].cName} style = {{textDecoration: "none"}}>
                     <a onClick = {() => this.setState({isOpen2: !this.state.isOpen2})}>{NavbarData[1].title}</a>
                   </Link>
                 </li>
-                <li className = "tab py-4">
+                <li className = "tab">
                   <Link to = {NavbarData[2].path} className = {NavbarData[2].cName} style = {{textDecoration: "none"}}>
                     <span>{NavbarData[2].title}</span>
                   </Link>
                 </li>
-                <li className = "tab py-4">
+                <li className = "tab">
                   <Link to = {NavbarData[3].path} className = {NavbarData[3].cName} style = {{textDecoration: "none"}}>
                     <span>{NavbarData[3].title}</span>
                   </Link>
                 </li>
-                <li className = "tab py-4">
+                <li className = "tab">
                   <Link to = {NavbarData[4].path} className = {NavbarData[4].cName} style = {{textDecoration: "none"}}>
                     <a onClick = {() => this.setState({ isOpen: !this.state.isOpen})}>{NavbarData[4].title}</a>
                   </Link>
                 </li>
-                <li className = "tab py-4">
+                <li className = "tab">
                   <Link to = {NavbarData[5].path} className = {NavbarData[5].cName} style = {{textDecoration: "none"}}>
                     <span>{NavbarData[5].title}</span>
                   </Link>
                 </li>
-                <li className = "tabL py-4">
+                <li className = "tabL">
                   <Link to = {NavbarData[6].path} className = {NavbarData[6].cName} style = {{textDecoration: "none"}}>
                     <span>{NavbarData[6].title}</span>
                   </Link>

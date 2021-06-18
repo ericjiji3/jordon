@@ -2,19 +2,23 @@
   background-color: #74bedb;
   font-family: 'SpaceMono';
 }
-.tab{
+.tab, .tabU{
   font-family: 'SpaceMonoReg', monospace;
   font-size: 1em;
   text-align: center;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #hidden{
   height: auto;
 }
 .tabL{
   margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .albumPic{
   width: 100%;
@@ -182,12 +186,25 @@
     font-size: 1.8rem;
     cursor: pointer;
   }
+  .tabU{
+    height: auto;
+    left: -50px;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .tab{
     height: auto;
     left: -50px;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
-
+  .tabL{
+    height: auto;
+    left: -50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .emailOverlay{
     position: fixed;
     top: 0;
