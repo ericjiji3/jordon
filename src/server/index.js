@@ -54,14 +54,6 @@ app.listen(3001, () =>{
   console.log('please');
 })
 
-app.get("/api/get", (req,res) => {
-  con.connect(function(err) {
-    var sql = "SELECT * FROM newsletter;";
-    con.query(sql, function (err, result) {
-      res.send(result);
-    });
-  });
-});
 
 app.post("/api/insert", (req, res) => {
   const firstName = req.body.firstName;
