@@ -9,7 +9,19 @@
   margin: auto;
   margin-top: 3em;
   margin-bottom: 3em;
+  margin-left: 38.5%;
+  writing-mode: vertical-lr;
+  font-family: 'SpaceMono';
+  text-decoration: none;
+  color: black;
 }
+
+.linkPic-text {
+  font-size: 20px;
+  letter-spacing: 5px;
+  transform: rotate(180deg);
+}
+
 .pic{
   width: 15rem;
   height: 15rem;
@@ -37,6 +49,7 @@
     margin: auto;
     margin-top: 15px;
     margin-bottom: 3em;
+    margin-left: 2em;
   }
 
 }

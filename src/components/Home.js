@@ -28,7 +28,8 @@ class Home extends React.Component{
           </div>
         </div>
         <div>
-          <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><img src = {pic6} className = "pic"></img></a>
+
+           <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><div className= "linkPic-text"> LATEST SOUNDS </div><img src = {pic6} className = "pic"></img></a>
         </div>
         <Press/>
         <video className = "row mx-auto mb-5" width="320" height="240" controls>
