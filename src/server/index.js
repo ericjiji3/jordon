@@ -24,9 +24,9 @@ var con = mysql.createConnection({
 });
 
 
-app.use(cors())
-app.use(express.json())
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(cors());
+app.use(express.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 // app.get("/",(req,res) => {
 //     con.connect(function(err) {
@@ -55,7 +55,7 @@ app.listen(3000, () =>{
 })
 
 
-app.post("/", (req, res) => {
+app.post("/api/insert", (req, res) => {
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
   const email = req.body.email;
