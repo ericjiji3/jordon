@@ -2,6 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
+app.use(cors());
+app.use(express.json());
+app.use(bodyParser.urlencoded({extended: true}));
 // const mysql = require('mysql');
 //
 // const db = mysql.createPool({
@@ -24,9 +27,6 @@ var con = mysql.createConnection({
 });
 
 
-app.use(cors());
-app.use(express.json());
-app.use(bodyParser.urlencoded({extended: true}));
 
 // app.get("/",(req,res) => {
 //     con.connect(function(err) {
@@ -55,7 +55,7 @@ app.listen(3000, () =>{
 })
 
 
-app.get("/api/insert", (req, res) => {
+app.post("/api/insert", (req, res) => {
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
   const email = req.body.email;
