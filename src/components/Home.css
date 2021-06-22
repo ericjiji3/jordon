@@ -15,7 +15,10 @@
   text-decoration: none;
   color: black;
 }
-
+.however{
+  width: auto;
+  height: 12%;
+}
 .linkPic-text {
   font-size: 20px;
   letter-spacing: 5px;

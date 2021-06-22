@@ -19,7 +19,7 @@ class Home extends React.Component{
   render(){
     return(
       <div>
-        <div className = "row" style={{marginLeft: "-4vw", marginRight: "-4vw"}}>
+        <div className = "row" style={{marginLeft: "0vw", marginRight: "0vw"}}>
           <div className = "col-sm-3 mb-1">
             <Navbar/>
           </div>
@@ -32,10 +32,8 @@ class Home extends React.Component{
            <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><div className= "linkPic-text"> LATEST SOUNDS </div><img src = {pic6} className = "pic"></img></a>
         </div>
         <Press/>
-        <video className = "row mx-auto mb-5" width="320" height="240" controls>
-            <source src={trailer}>
-            </source>
-        </video>
+        <iframe className = "however row mx-auto my-3" src="https://www.youtube.com/embed/zxA9LQOj2_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         <Modal isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})} style={
             {
               overlay:{
