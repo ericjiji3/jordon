@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
+const PORT = 3001;
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -27,7 +28,6 @@ var con = mysql.createConnection({
 });
 
 
-
 // app.get("/",(req,res) => {
 //     con.connect(function(err) {
 //       if (err) throw err;
@@ -50,9 +50,7 @@ var con = mysql.createConnection({
 //     console.log("1 record inserted");
 //   });
 // });
-app.listen(3000, () =>{
-  console.log('please');
-})
+
 
 
 app.post("/api/insert", (req, res) => {
@@ -70,4 +68,8 @@ app.post("/api/insert", (req, res) => {
       console.log(result);
     });
   });
-})
+});
+
+app.listen(process.env.PORT || PORT, () =>{
+  console.log('please');
+});
