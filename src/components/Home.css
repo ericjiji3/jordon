@@ -16,8 +16,8 @@
   color: black;
 }
 .however{
-  width: auto;
-  height: 12%;
+  width: 50%;
+  height: 30%;
 }
 .linkPic-text {
   font-size: 20px;
@@ -54,5 +54,8 @@
     margin-bottom: 3em;
     margin-left: 2em;
   }
-
+  .however{
+    width: 85%;
+    height: 15%;
+  }
 }
