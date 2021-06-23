@@ -237,17 +237,17 @@
   }
   .rightArrow{
     position: absolute;
-    top: 95%;
+    top: 97.5%;
     right: 8vw;
-    font-size: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
     user-select: none;
   }
   .leftArrow{
     position: absolute;
-    top: 95%;
+    top: 97.5%;
     left: 8vw;
-    font-size: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
     user-select: none;
   }
