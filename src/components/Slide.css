@@ -207,7 +207,7 @@
     position: relative;
     opacity: 1;
     transition-duration: 1s;
-    top: -5%
+    /* top: -5%; */
   }
 
   .pic1{
