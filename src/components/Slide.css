@@ -237,7 +237,7 @@
   }
   .rightArrow{
     position: absolute;
-    top: 99%;
+    top: 100%;
     right: 8vw;
     font-size: 2rem;
     cursor: pointer;
@@ -245,7 +245,7 @@
   }
   .leftArrow{
     position: absolute;
-    top: 99%;
+    top: 100%;
     left: 8vw;
     font-size: 2rem;
     cursor: pointer;
