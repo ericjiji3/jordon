@@ -28,6 +28,7 @@ var con = mysql.createConnection({
 });
 
 
+
 // app.get("/",(req,res) => {
 //     con.connect(function(err) {
 //       if (err) throw err;
@@ -65,7 +66,7 @@ app.post("/api/insert", (req, res) => {
     var sql = "INSERT INTO newsletter (firstName, lastName, email, number) VALUES (?, ?, ?, ?);";
     con.query(sql, [firstName, lastName, email, number] ,function (err, result) {
       if (err) throw err;
-      console.log(result);
+      console.log(err);
     });
   });
 });
