@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var mysql = require('mysql');
 
-var con = mysql.createConnection({
+var con = mysql.createPool({
   host: "us-cdbr-east-04.cleardb.com",
   user: "be73d5ca2304c0",
   password: "75b19aa1",
@@ -52,23 +52,29 @@ var con = mysql.createConnection({
 //   });
 // });
 
+// con.connect(function(err) {
+//
+//   console.log("Connected!");
+//   var sql = "INSERT INTO newsletter (firstName, lastName, email, number) VALUES (?, ?, ?, ?);";
+//   con.query(sql, [firstName, lastName, email, number] ,function (err, result) {
+//     if (err) throw err;
+//     console.log(err);
+//   });
+// });
 
 
-app.post("/insert", (req, res) => {
+app.post("/api/insert", (req, res) => {
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
   const email = req.body.email;
   const number = req.body.number;
 
-  con.connect(function(err) {
-
-    console.log("Connected!");
-    var sql = "INSERT INTO newsletter (firstName, lastName, email, number) VALUES (?, ?, ?, ?);";
-    con.query(sql, [firstName, lastName, email, number] ,function (err, result) {
-      if (err) throw err;
+  var sql = "INSERT INTO newsletter (firstName, lastName, email, number) VALUES (?, ?, ?, ?);";
+  con.query(sql, [firstName, lastName, email, number] ,function (err, result) {
       console.log(err);
     });
-  });
+
+
 });
 
 app.listen(process.env.PORT || PORT, () =>{
