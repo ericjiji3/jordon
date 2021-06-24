@@ -54,7 +54,7 @@ var con = mysql.createConnection({
 
 
 
-app.post("/api/insert", (req, res) => {
+app.post("/insert", (req, res) => {
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
   const email = req.body.email;
