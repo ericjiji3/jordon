@@ -28,7 +28,7 @@ class SignUp extends Component{
 
   handleSubmit(event){
     event.preventDefault()
-    Axios.post("https://www.jordon-inrwav.com/api/insert", {
+    Axios.post("http://localhost:3001/api/insert", {
       firstName: this.state.fName,
       lastName: this.state.lName,
       email: this.state.eMail,

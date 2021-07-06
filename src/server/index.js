@@ -20,13 +20,19 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var mysql = require('mysql');
 
-var con = mysql.createPool({
-  host: "us-cdbr-east-04.cleardb.com",
-  user: "be73d5ca2304c0",
-  password: "75b19aa1",
-  database: "jordonLive"
-});
+// var con = mysql.createConnection({
+//   host: "us-cdbr-east-04.cleardb.com",
+//   user: "be73d5ca2304c0",
+//   password: "75b19aa1",
+//   database: "jordonLive"
+// });
+const con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "changeme",
+  database: "jordon"
 
+});
 
 
 // app.get("/",(req,res) => {
@@ -69,14 +75,19 @@ app.post("/api/insert", (req, res) => {
   const email = req.body.email;
   const number = req.body.number;
 
-  var sql = "INSERT INTO newsletter (firstName, lastName, email, number) VALUES (?, ?, ?, ?);";
-  con.query(sql, [firstName, lastName, email, number] ,function (err, result) {
+  con.connect(function(err) {
+
+    console.log("Connected!");
+    var sql = "INSERT INTO newsletter (firstName, lastName, email, number) VALUES (?, ?, ?, ?);";
+    con.query(sql, [firstName, lastName, email, number] ,function (err, result) {
+      if (err) throw err;
       console.log(err);
     });
+  });
 
 
 });
-
-app.listen(process.env.PORT || PORT, () =>{
+// process.env.PORT || PORT
+app.listen(3001, () =>{
   console.log('please');
 });
