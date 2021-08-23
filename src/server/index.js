@@ -20,19 +20,20 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var mysql = require('mysql');
 
-// var con = mysql.createConnection({
-//   host: "us-cdbr-east-04.cleardb.com",
-//   user: "be73d5ca2304c0",
-//   password: "75b19aa1",
-//   database: "jordonLive"
-// });
-const con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "changeme",
-  database: "jordon"
-
+var con = mysql.createConnection({
+  host: "us-cdbr-east-04.cleardb.com",
+  user: "be73d5ca2304c0",
+  password: "75b19aa1",
+  database: "jordonLive"
 });
+
+// const con = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "changeme",
+//   database: "jordon"
+
+// });
 
 
 // app.get("/",(req,res) => {
