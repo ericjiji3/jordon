@@ -3,9 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 const PORT = 3001;
-app.use(cors());
-app.use(express.json());
-app.use(bodyParser.urlencoded({extended: true}));
+
 // const mysql = require('mysql');
 //
 // const db = mysql.createPool({
@@ -26,6 +24,10 @@ var con = mysql.createConnection({
   password: "75b19aa1",
   database: "jordonLive"
 });
+
+app.use(cors());
+app.use(express.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 // const con = mysql.createConnection({
 //   host: "localhost",
@@ -89,6 +91,6 @@ app.post("/api/insert", (req, res) => {
 
 });
 // process.env.PORT || PORT
-app.listen(3001, () =>{
+app.listen(process.env.PORT || PORT, () =>{
   console.log('please');
 });
