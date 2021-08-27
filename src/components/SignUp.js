@@ -28,15 +28,58 @@ class SignUp extends Component{
 
   handleSubmit(event){
     event.preventDefault()
-    Axios.post("https://jordon-web.herokuapp.com/api/insert", {
-      firstName: this.state.fName,
-      lastName: this.state.lName,
-      email: this.state.eMail,
-      number: this.state.number}).then(()=>{
-        alert('success!')
-      });
-    alert("success!")
+    // Axios.post("https://jordon-web.herokuapp.com/api/insert", {
+    //   firstName: this.state.fName,
+    //   lastName: this.state.lName,
+    //   email: this.state.eMail,
+    //   number: this.state.number}).then(()=>{
+    //     alert('success!')
+    //   });
+    // alert("success!")
+    this.pushData(this);
   }
+
+  /***********************************************************************
+   * adjustData
+   * 
+   ***********************************************************************/
+ adjustData(someData) 
+ {
+   
+ }
+
+ 
+ /***********************************************************************
+  * getProductData
+  * 
+  ***********************************************************************/
+ pushData(that)
+ {
+
+   let myPromise = new Promise(function(myResolve, myReject) {
+     let req = new XMLHttpRequest();
+     req.open('POST', "hello.php", true);
+       req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+     req.onload = function() {
+       if (req.status == 200) 
+       {
+         alert(req.response);
+         myResolve(req.response);
+       } else {
+         myReject("Database Read Error");
+       }
+     };
+
+     let params = "action=push";
+     req.send(params);
+     
+   });
+   
+   myPromise.then(
+     function(value) {that.adjustData(value)},
+     function(error) {that.adjustData(error);} 
+   );
+ }
 
   render(){
     return(
