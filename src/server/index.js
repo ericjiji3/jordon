@@ -15,27 +15,27 @@ const PORT = 3001;
 // });
 //
 //
-
-var mysql = require('mysql');
-
-var con = mysql.createConnection({
-  host: "us-cdbr-east-04.cleardb.com",
-  user: "be73d5ca2304c0",
-  password: "75b19aa1",
-  database: "jordonLive"
+const { Pool } = require('pg');
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
+
+// var mysql = require('mysql');
+
+// var con = mysql.createConnection({
+//   host: "us-cdbr-east-04.cleardb.com",
+//   user: "be73d5ca2304c0",
+//   password: "75b19aa1",
+//   database: "jordonLive"
+// });
 
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-// const con = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "changeme",
-//   database: "jordon"
-
-// });
 
 
 // app.get("/",(req,res) => {
@@ -90,6 +90,7 @@ app.post("/api/insert", (req, res) => {
 
 
 });
+
 // process.env.PORT || PORT
 app.listen(process.env.PORT || PORT, () =>{
   console.log('please');
