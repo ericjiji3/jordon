@@ -18,6 +18,7 @@
 .however{
   width: 50%;
   height: 30%;
+  box-shadow: 0px 0px 60px #1c98d665;
 }
 .linkPic-text {
   font-size: 20px;
