@@ -2,7 +2,6 @@
   "homepage": "https://jordon-inrwav.com/",
   "name": "jordon",
   "version": "0.1.0",
-  "private": true,
   "engines": {
     "node": "14.16.0"
   },
