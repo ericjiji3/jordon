@@ -38,7 +38,7 @@ class Navbar extends React.Component{
                 </li>
                 <li className = "tab">
                   <Link to = {NavbarData[1].path} className = {NavbarData[1].cName} style = {{textDecoration: "none"}}>
-                    <a onClick = {() => this.setState({isOpen2: !this.state.isOpen2})}>{NavbarData[1].title}</a>
+                    <span onClick = {() => this.setStspante({isOpen2: !this.state.isOpen2})}>{NavbarData[1].title}</span>
                   </Link>
                 </li>
                 <li className = "tab">
@@ -53,7 +53,7 @@ class Navbar extends React.Component{
                 </li>
                 <li className = "tab">
                   <Link to = {NavbarData[4].path} className = {NavbarData[4].cName} style = {{textDecoration: "none"}}>
-                    <a onClick = {() => this.setState({ isOpen: !this.state.isOpen})}>{NavbarData[4].title}</a>
+                    <span onClick = {() => this.setState({ isOpen: !this.state.isOpen})}>{NavbarData[4].title}</span>
                   </Link>
                 </li>
                 <li className = "tab">
