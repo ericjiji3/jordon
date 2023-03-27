@@ -1,12 +1,7 @@
-import logo from './logo.svg';
-import styles from "./styles.css";
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import About from './pages/About';
-import Email from './pages/Email';
-import Projects from './pages/Projects';
 import Shop from './pages/Shop';
 import Videos from './pages/Videos';
 import Stages from './pages/Stages';

@@ -1,6 +1,5 @@
 import React from "react"
 import Navbar from "../components/Navbar.js";
-import styles from "./Videos.css";
 import trailer from "../components/pics/trailer.MOV";
 
 function Videos(){

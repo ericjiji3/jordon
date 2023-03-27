@@ -1,11 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faYoutube,
   faFacebookF,
   faTwitter,
   faInstagram,
-  faSpotify
 } from "@fortawesome/free-brands-svg-icons";
 
 

@@ -1,6 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import Navbar from "../components/Navbar.js";
-import styles from "./About.css";
 import Modal from "react-modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,7 +7,6 @@ import {
   faApple,
   faItunesNote,
   faAmazon,
-  faGooglePlay,
   faYoutube,
   faDeezer
 } from "@fortawesome/free-brands-svg-icons";
@@ -29,7 +27,7 @@ class About extends React.Component{
           <Navbar/>
         </div>
         <div className = "col-md-3 mt-3">
-          <img className = "about" src = {pic1}></img>
+          <img className = "about" src = {pic1} alt="err"></img>
         </div>
         <div className = "col-md-5">
           <span className = "text">

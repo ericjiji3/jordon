@@ -1,9 +1,4 @@
-import React from "react";
 import pic1 from "./pics/pic1.jpeg";
-import pic2 from "./pics/pic2.jpeg";
-import pic3 from "./pics/pic3.jpeg";
-import pic4 from "./pics/pic4.jpeg";
-import pic5 from "./pics/pic5.jpeg";
 
 export const SlideData = [
   {

@@ -1,12 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import Slide from "./Slide";
 import {SlideData} from "./SlideData";
-import AlbumPic from "./AlbumPic";
 import Press from "./Press";
 import Navbar from "./Navbar";
-import styles from "./Home.css";
 import Modal from "react-modal";
-import trailer from "./pics/trailer.MOV";
 import pic6 from "./pics/pic6.png";
 
 class Home extends React.Component{
@@ -29,7 +26,7 @@ class Home extends React.Component{
         </div>
         <div>
 
-           <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><div className= "linkPic-text"> LATEST SOUNDS </div><img src = {pic6} className = "pic"></img></a>
+           <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><div className= "linkPic-text"> LATEST SOUNDS </div><img src = {pic6} className = "pic" alt="err"></img></a>
         </div>
         <iframe className = "however row mx-auto my-3" src="https://www.youtube.com/embed/a6_N8gNGPPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
         <Press/>
@@ -60,7 +57,7 @@ class Home extends React.Component{
               }
             }
           }>
-          <a href = "https://www.youtube.com/"><img src = "https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" className = "albumPic"></img></a>
+          <a href = "https://www.youtube.com/"><img src = "https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" alt = "err" className = "albumPic"></img></a>
         </Modal>
     </div>
     )

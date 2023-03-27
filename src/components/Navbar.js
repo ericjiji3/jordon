@@ -1,7 +1,6 @@
-import React,{useState} from "react";
+import React from "react";
 import {NavbarData} from "./NavbarData";
 import {Link} from "react-router-dom";
-import styles from "./Navbar.css";
 import SocialBar from "./SocialBar";
 import SignUp from "./SignUp";
 import Modal from "react-modal";
@@ -11,12 +10,10 @@ import {
   faApple,
   faItunesNote,
   faAmazon,
-  faGooglePlay,
   faYoutube,
   faDeezer
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import SideBar from "./SideBar";
 
 
 class Navbar extends React.Component{

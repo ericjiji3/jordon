@@ -4,16 +4,13 @@ import {FaBars} from 'react-icons/fa';
 import {NavbarData} from "./NavbarData";
 import {Link} from "react-router-dom";
 import SocialBar from "./SocialBar";
-import SignUp from "./SignUp";
-import Modal from "react-modal";
-import styles from "./SideBar.css";
 
 const SideBar = () =>{
     const [isOpen, setIsOpen] = useState(false)
 
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
+    // const toggle = () => {
+    //     setIsOpen(!isOpen)
+    // }
 
     return(
         <div className = "sideBar">

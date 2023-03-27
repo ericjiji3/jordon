@@ -1,7 +1,4 @@
 import React, {Component} from "react";
-import Modal from 'react-modal';
-import styles from "./SignUp.css";
-import Axios from "axios";
 
 class SignUp extends Component{
   constructor(props){
@@ -61,7 +58,7 @@ class SignUp extends Component{
      req.open('POST', "hello.php", true);
        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
      req.onload = function() {
-       if (req.status == 200) 
+       if (req.status === 200) 
        {
          alert(req.response);
          myResolve(req.response);
